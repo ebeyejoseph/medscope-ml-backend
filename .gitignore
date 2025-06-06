@@ -1,0 +1,22 @@
+# Ignore model files
+model.pkl
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# VSCode settings (if applicable)
+.vscode/
+
+# Log files
+*.log

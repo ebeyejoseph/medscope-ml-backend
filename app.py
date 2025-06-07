@@ -12,11 +12,11 @@ except ImportError:
     os.system('pip install gdown')
     import gdown
 
-# Google Drive file IDs
-MODEL_FILE_ID = "1jeH1hq1bnUOd-lSzr-LDfi2j5T2d4FzL"
-SCALER_FILE = "scaler.pkl"  # Assuming this is local for now
+# ✅ New Google Drive file ID for model.pkl
+MODEL_FILE_ID = "1v_6BNX7WjQfOODVVzUQ2sT9h8oHufzuP"
+SCALER_FILE = "scaler.pkl"  # Assuming this is still local
 
-# Download model.pkl if not present
+# Download model.pkl if not already downloaded
 MODEL_FILE = "model.pkl"
 if not os.path.exists(MODEL_FILE):
     print("Downloading model.pkl from Google Drive...")
@@ -63,7 +63,6 @@ def predict():
     except Exception as e:
         print("Error:", e)
         return jsonify({'error': str(e)}), 500
-
 
 if __name__ == '__main__':
     app.run(debug=True)

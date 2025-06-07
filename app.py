@@ -13,7 +13,7 @@ except ImportError:
     import gdown
 
 # ✅ New Google Drive file ID for model.pkl
-MODEL_FILE_ID = "1v_6BNX7WjQfOODVVzUQ2sT9h8oHufzuP"
+MODEL_FILE_ID = "1-wTGftA_jnsTxv0FcNK-EhZTt3upMvxB"
 SCALER_FILE = "scaler.pkl"  # Assuming this is still local
 
 # Download model.pkl if not already downloaded
